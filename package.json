@@ -1,0 +1,27 @@
+{
+  "name": "miniprogram_phb_server",
+  "version": "1.0.0",
+  "description": "miniprogram top server by nodejs v8.11.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jang-git/miniprogram_phb_server.git"
+  },
+  "keywords": [
+    "nodejs",
+    "koa2",
+    "mysql",
+    "knex",
+    "pm2",
+    "nodemon"
+  ],
+  "author": "Jang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jang-git/miniprogram_phb_server/issues"
+  },
+  "homepage": "https://github.com/jang-git/miniprogram_phb_server#readme"
+}
