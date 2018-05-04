@@ -1,27 +1,57 @@
 {
-  "name": "miniprogram_phb_server",
+  "name": "miniprogram_top_server",
+  "description": "miniprogram top",
   "version": "1.0.0",
-  "description": "miniprogram top server by nodejs v8.11.1",
-  "main": "index.js",
+  "author": "张强 <25720297@qq.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jang-git/miniprogram_phb_server.git"
+  "dependencies": {
+    "think-cache": "^1.0.0",
+    "think-session": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-model": "^1.0.0",
+    "think-session-file": "^1.0.5",
+    "think-view": "^1.0.0",
+    "think-view-nunjucks": "^1.0.1",
+    "think-model-mysql": "^1.0.0",
+    "think-logger3": "^1.0.0",
+    "thinkjs": "^3.0.0"
   },
-  "keywords": [
-    "nodejs",
-    "koa2",
-    "mysql",
-    "knex",
-    "pm2",
-    "nodemon"
-  ],
-  "author": "Jang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jang-git/miniprogram_phb_server/issues"
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-think-node": "^1.0.0",
+    "node-notifier": "^5.0.2",
+    "think-inspect": "0.0.2",
+    "think-babel": "^1.0.3",
+    "think-watcher": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "ava": "^0.18.0",
+    "nyc": "^7.0.0"
   },
-  "homepage": "https://github.com/jang-git/miniprogram_phb_server#readme"
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md",
+  "thinkjs": {
+    "metadata": {
+      "name": "miniprogram_top_server",
+      "description": "miniprogram top",
+      "author": " : <25720297@qq.com>",
+      "babel": true,
+      "defaultModule": "home"
+    },
+    "projectName": "product_server",
+    "templateName": "/usr/local/lib/node_modules/think-cli/default_template",
+    "cacheTemplatePath": "/Users/Jang/.think-templates/-usr-local-lib-node_modules-think-cli-default_template",
+    "clone": false,
+    "isMultiModule": true
+  }
 }
