@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "iconv-lite": "^0.4.23",
     "think-cache": "^1.0.0",
     "think-cache-file": "^1.0.8",
     "think-logger3": "^1.0.0",
